@@ -1,0 +1,28 @@
+{
+  "name": "editor",
+  "version": "0.0.1",
+  "description": "A simple yolol editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tarrke",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarrke/yolol-editor.git"
+  },
+  "keywords": [
+    "yolol"
+  ],
+  "bugs": {
+    "url": "https://github.com/Tarrke/yolol-editor/issues"
+  },
+  "homepage": "https://github.com/Tarrke/yolol-editor#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "redis": "^3.1.2",
+    "share": "^0.7.40"
+  }
+}
