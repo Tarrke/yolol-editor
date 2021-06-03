@@ -31,9 +31,15 @@ footer {
     color: #ffffff;
 }
 
+.CodeMirror {
+    min-width: 0px;
+    min-height: 0px;
+}
+
 .wrapper {
     margin: auto;
     max-width: 70rem;
+    align-items: stretch;
 }
 
 .menu {
