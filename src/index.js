@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 // Imports de l'application
 import Overall from './components/overall';
+
+// gestion des CSS:
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 // ========================================
 ReactDOM.render(

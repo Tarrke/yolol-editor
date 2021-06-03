@@ -13,12 +13,6 @@ header, footer, section, #main, #menu, #side {
     padding: 20px;
 }
 
-@media screen and (min-width: 640px) {
-    .flex-container {
-        display: flex;
-    }
-}
-
 .bordered {
     border: 2px solid #000000;
 }
@@ -42,19 +36,29 @@ footer {
     max-width: 70rem;
 }
 
-.menu, .menu_collapsed {
-    background: #0f0;
-    color: #000;
-}
-
 .menu {
-    flex: 0 1 100px;
+    flex: 0 0 200px;
 }
 
 .menu_collapsed {
-    flex: 0 1 20px;
-    margin: 0px;
-    padding: 0px;
+    flex: 0 0 50px;
+}
+
+nav {
+    background: #333;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
 }
 
 .editor {
@@ -71,4 +75,58 @@ footer {
 
 ol, ul {
     padding-left: 30px;
+}
+
+@media screen and (min-width: 780px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .menu, .menu_collapsed {
+        display: flex;
+        flex-direction: column;
+        background: #aaa;
+        align-items: flex-start;
+        padding: 15px;
+        /*max-width: 150px;*/
+        flex-grow: 0;
+        flex-shrink: 0;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+/*
+    .menu {
+        flex: 0 0 150px;
+        
+    }
+
+    .menu_collapsed {
+        flex: 0 0 50px;
+    }
+*/
+    .menu_collapsed button {
+        margin: 0 auto;
+    }
+    
+/*
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        flex: 1 1 0;
+    }
+
+    nav a {
+        color: #00f;
+    }*/
+
+    nav button {
+        margin: 0 0;
+        /*width: 50px;*/
+    }
+    nav ul, nav ul li {
+        margin: 0 auto;
+    }
 }
