@@ -4,7 +4,7 @@ import '../index.css';
 export default class Footer extends React.Component {
     render() {
       return (
-        <header className="bordered">
+        <header className="">
             <h1>Basic Footer</h1>
         </header>
       );
