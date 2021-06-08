@@ -1,14 +1,33 @@
-body {
+html, body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    /*margin: 20px;*/
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
   
 .overall {
     display: flex;
-    background-color: #000000;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100vh;
 }
 
-header, footer, section, #main, #menu, #side {
+header, footer {
+    height: 64px;
+    flex: 0 0 auto;
+}
+
+#main {
+    /*flex: 1 0 auto;*/
+    /* flex-grow: 1; */
+    flex: 1;
+    overflow: auto;
+    justify-content: center;
+}
+
+section, #menu, #side {
     margin: 0;
     padding: 20px;
 }
@@ -40,6 +59,7 @@ footer {
     margin: auto;
     max-width: 70rem;
     align-items: stretch;
+    flex-grow: 1;
 }
 
 .menu {
@@ -77,6 +97,7 @@ nav a {
     background: #FF0;
     color: #000;
     flex: 1;
+    overflow: auto;
 }
 
 ol, ul {

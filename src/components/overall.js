@@ -7,7 +7,7 @@ import '../index.css';
 export default class Overall extends React.Component {
     render() {
       return (
-        <div id="overall">
+        <div className="overall">
             <Header />
             <Main />
             <Footer />

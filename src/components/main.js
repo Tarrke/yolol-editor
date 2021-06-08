@@ -7,7 +7,7 @@ import '../index.css';
 export default class Main extends React.Component {
     render() {
         return (
-            <div className="flex-container wrapper">
+            <div className="flex-container wrapper" id="main">
                 <Menu />
                 <Editor />
                 <Side />
